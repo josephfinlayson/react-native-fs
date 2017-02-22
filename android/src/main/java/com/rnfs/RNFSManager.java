@@ -294,6 +294,7 @@ public class RNFSManager extends ReactContextBaseJavaModule {
 
             promise.resolve(infoMap);
           } else {
+            Log.d("reject");
             reject(promise, options.getString("toFile"), res.exception);
           }
         }
