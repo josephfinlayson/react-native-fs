@@ -56,8 +56,8 @@ public class Downloader extends AsyncTask<DownloadParams, int[], DownloadResult>
         connection.setRequestProperty(key, value);
       }
 
-      connection.setConnectTimeout(5000);
-      connection.setReadTimeout(15000);
+      connection.setConnectTimeout(50000);
+      connection.setReadTimeout(150000);
       connection.connect();
 
       int statusCode = connection.getResponseCode();
